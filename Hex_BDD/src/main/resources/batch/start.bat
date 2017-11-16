@@ -1,0 +1,2 @@
+start %1 screen:// --one-instance -I dummy --dummy-quiet --extraintf rc --rc-host localhost:8082 --rc-quiet :screen-fps=25 :screen-caching=300 --sout "#transcode{vcodec=h264,vb=800,fps=15,scale=1,acodec=none}:duplicate{dst=std{access=file,mux=mp4,dst=%~2.mp4}}"
+exit
